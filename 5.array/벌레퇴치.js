@@ -25,8 +25,9 @@ function solution1(feature) {
 
 function solution2(feature) {
     for(i = 0; i < feature.length; i++) {
-        const pos = feature.indexOf("bug");
-        feature.splice(pos, 1);
+        if(feature[i] === "bug") {
+            feature.splice(i, 1);
+        }
     }
     return feature;
 }

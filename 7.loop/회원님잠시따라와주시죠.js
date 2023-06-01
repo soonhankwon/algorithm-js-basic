@@ -12,8 +12,8 @@ const list2 = [1,1,1,1,0,1];
 
 function solution(list) {
     const res = [];
-    list.forEach(element => {
-        if(element === 1)
+    list.forEach(e => {
+        if(e === 1)
             res.push("Yes");
         else
             res.push("No");

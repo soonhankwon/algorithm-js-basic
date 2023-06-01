@@ -13,7 +13,7 @@ function solution(barcode) {
     const arr2 = barcode.filter((e) => e === 0)
     return [...arr1,
         ...arr2];
-}s
+}
 
 console.log(solution(barcode1));
 console.log(solution(barcode2));

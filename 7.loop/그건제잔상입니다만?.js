@@ -13,7 +13,7 @@ const userList2 = ["228.093.22", "228.093.22", "228.093.22"];
 const ip2 = "228.093.22";
 
 function solution(userList, ip) {
-    return userList.filter((e) => e != ip);;
+    return userList.filter((e) => e !== ip);;
 }
 
 console.log(solution(userList1, ip1));

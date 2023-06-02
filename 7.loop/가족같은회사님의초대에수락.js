@@ -16,7 +16,7 @@
 const nameList1 = ["병건", "호민", "풍"];
 
 function solution(nameList) {
-    return nameList.map((e) => e + "님");;
+    return nameList.map((e) => e + "님");
 }
 
 console.log(solution(nameList1));

@@ -10,6 +10,8 @@
 
 const search1 = "flutter";
 const recommends1 = ["flower", "flow", "flight"];
+const search2 = "apple";
+const recommends2 = ["dog", "racecar", "car"];
 
 function solution(search, recommends) {
     let ans = "";
@@ -42,4 +44,6 @@ function solution2(search, recommends) {
 }
 
 console.log(solution(search1, recommends1));
+console.log(solution(search2, recommends2));
 console.log(solution2(search1, recommends1));
+console.log(solution2(search2, recommends2));

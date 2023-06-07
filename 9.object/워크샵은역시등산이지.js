@@ -12,9 +12,7 @@ const arr3 = [2,4,3,3,2,4,1];
 
 function solution(arr) {
     let map = new Map();
-    let set = new Set();
     for(let i = 0; i < arr.length; i++) {
-        set.add(arr[i]);
         if(isNaN(map.get(arr[i])))
             map.set(arr[i], 1);    
         else
@@ -22,13 +20,13 @@ function solution(arr) {
     }
 
     const ans = [];
-    for(const e of set) {
-        if(map.get(e) % 2 === 1)
-            ans.push(e);
+    for(let key of map.keys()) {
+        if(map.get(key) % 2 === 1)
+            ans.push(key);
         else
             continue;
     }
-    return ans;
+    return Number(ans[0]);
 }
 
 function solution2(arr) {
